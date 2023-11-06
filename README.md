@@ -1,16 +1,7 @@
-# blackventory
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Assignment 2
+# Assignment 2
+# Explanation
+## 1.What are the main differences between stateless and stateful widget in Flutter?
+Stateless widgets are immutable, which means that once the stateless widgets are created, it cannot be changed. On the other hand, stateful widgets are mutable which means it can change overtime and have `State` object that manage this state.
+## 2. Explain all widgets that you used in this assignment.
+## 3. Explain how you implemented the checklist above step-by-step (not just following the tutorial).
