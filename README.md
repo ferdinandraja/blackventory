@@ -3,6 +3,12 @@
 ## 1.What are the main differences between stateless and stateful widget in Flutter?
 Stateless widgets are immutable, which means that once the stateless widgets are created, it cannot be changed. On the other hand, stateful widgets are mutable which means it can change overtime and have `State` object that manage this state.
 ## 2. Explain all widgets that you used in this assignment.
+### in menu.dart
+1. MyHomePage   : Extends the StatelessWidget class and also the home screen of the application. It contains `AppBar` and `GridView` tha contains a list of `ShopItem`
+2. ShopItem     : A class that represents an item in the shop with a name, an icon, and a color. Also used to store data for each itm on the grid. 
+3. ShopCard     : A widget used to display each `ShopItem` in the grid. It contains an icon and text corresponding to the `ShopItem` data.
+### in main.dart
+1. MyApp        : The main entry widget for the app. It has configuration of apps title and theme and also it color scheme.
 ## 3. Explain how you implemented the checklist above step-by-step (not just following the tutorial).
 1. First, I have to install flutter
 2. Then, change directory to designated folder where we want to save the flutter project. After that, run 
