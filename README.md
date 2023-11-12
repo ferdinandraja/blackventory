@@ -8,7 +8,7 @@ Stateless widgets are immutable, which means that once the stateless widgets are
 2. ShopItem     : A class that represents an item in the shop with a name, an icon, and a color. Also used to store data for each itm on the grid. 
 3. ShopCard     : A widget used to display each `ShopItem` in the grid. It contains an icon and text corresponding to the `ShopItem` data.
 ### in main.dart
-1. MyApp        : The main entry widget for the app. It has configuration of apps title and theme and also it color scheme.
+1. MyApp        : The main entry widget for the app. It has configuration of apps title and theme and also it color scheme
 ## 3. Explain how you implemented the checklist above step-by-step (not just following the tutorial).
 1. First, I have to install flutter
 2. Then, change directory to designated folder where we want to save the flutter project. After that, run 

@@ -1,4 +1,4 @@
-import 'package:blackventory/menu.dart';
+import 'package:blackventory/screen/menu.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -36,4 +36,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
