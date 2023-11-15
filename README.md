@@ -1,4 +1,4 @@
-# Assignment 2
+# Assignment 7
 # Explanation
 ## 1.What are the main differences between stateless and stateful widget in Flutter?
 Stateless widgets are immutable, which means that once the stateless widgets are created, it cannot be changed. On the other hand, stateful widgets are mutable which means it can change overtime and have `State` object that manage this state.
@@ -91,3 +91,21 @@ class ShopCard extends StatelessWidget {
   }
 }
 ```
+
+# Assignment 8
+# Explanation
+## 1. Explain the difference between Navigator.push() and Navigator.pushReplacement(), accompanied by examples of the correct usage of both methods!
+In `Navigator.push()`, once it is click it pushes a new route onto the navigator's stack. his means that a new screen is added on top of the existing stack of screens. The user can navigate back to the previous screen using the back button. On the other hand, `Navigator.pushreplacement()`, it replace the top of the stach with the screen that is being push, such that the previous screen is remove from the stack.
+## 2. Explain each layout widget in Flutter and their respective usage contexts!
+1. Form : To create and handle user input for form.
+2. Drawer: To create a navigation bar
+3. AlertDialog : To notify the user about some error or unexpected case.
+4. TextFormField : For user input in text
+## 3. List the form input elements you used in this assignment and explain why you used these input elements!
+`TextFormField` which is used to create text field and can be validate.
+## 4. How is clean architecture implemented in a Flutter application?
+In flutter, the application is divided by into three, which is presentation, domain, and data. In presentation, it handles the frontend and UI of the application. In domain, it handles the data processing from the data layer to the presentation layer. In data layer, it responsibles for data storage.
+## 5. Step by step
+1.  Create a new page called `shop_listform.dart` that will become a page where user will give it inputs for adding an item. To create this page. Don't forget to add the form by adding a new class and create the form using `Scaffold`. Use `TextFormField` for user text input and `AlertDialog` for unexpected case. After that, don't forget to do the routing in the `menu.dart`
+2.  Create a left drawer by create a new file named `left_drawer.dart`. Use `Navigaor.pushReplacement()` for button that is pressed in the left drawer. Don't forget to add the routing for the button
+3. Do routing for home button in the drawe, don't forget to also use `Navigaor.pushReplacement()`.
