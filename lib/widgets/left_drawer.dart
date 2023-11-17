@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:blackventory/screen/menu.dart';
 import 'package:blackventory/screen/shoplist_form.dart';
+import 'package:blackventory/screen/list_product.dart';
 // TODO: Import the ShopFormPage page here
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -66,6 +67,17 @@ ListTile(
           builder: (context) => const ShopFormPage(),
         ));
   },
+),
+ListTile(
+    leading: const Icon(Icons.shopping_basket),
+    title: const Text('Product List'),
+    onTap: () {
+        // Route menu to product page
+        Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const ProductPage()),
+        );
+    },
 ),
         ],
       ),
