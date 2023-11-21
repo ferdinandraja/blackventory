@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:blackventory/models/product.dart';
 import 'package:blackventory/widgets/left_drawer.dart';
-
+import 'package:blackventory/screen/details.dart';
 class ProductPage extends StatefulWidget {
     const ProductPage({Key? key}) : super(key: key);
 
@@ -61,7 +61,15 @@ Widget build(BuildContext context) {
                 } else {
                     return ListView.builder(
                         itemCount: snapshot.data!.length,
-                        itemBuilder: (_, index) => Container(
+                        itemBuilder: (_, index) => InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => DetailPage(
+                                        product: snapshot.data![index])));
+                          },
+                          child: Container(
                                 margin: const EdgeInsets.symmetric(
                                     horizontal: 16, vertical: 12),
                                 padding: const EdgeInsets.all(20.0),
@@ -85,7 +93,7 @@ Widget build(BuildContext context) {
                                         "${snapshot.data![index].fields.description}")
                                 ],
                                 ),
-                            ));
+                            )));
                     }
                 }
             }));
