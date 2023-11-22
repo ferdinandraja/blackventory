@@ -112,10 +112,12 @@ In flutter, the application is divided by into three, which is presentation, dom
 
 # Assignment 9
 <details>
-1. Can we retrieve JSON data without creating a model first? If yes, is it better than creating a model before retrieving JSON data?
-Yes we can retrieve JSON data without creating a model first. It is better to create a model for more complex task as it helps you regarding the constraint of data type.
-2. Explain the function of CookieRequest and explain why a CookieRequest instance needs to be shared with all components in a Flutter application.
-CookieRequest is used to save the cookies from the django project. For this case, it is needed to be shared with all components in a flutter application because if you want to change the scree, you still need to be log in, which is stored in CookieRequest.
+<summary>1. Can we retrieve JSON data without creating a model first? If yes, is it better than creating a model before retrieving JSON data?</summary>
+Yes we can retrieve JSON data without creating a model first. It is better to create a model for more complex task as it helps you regarding the constraint of data type.</details>
+<details>
+<summary>
+2. Explain the function of CookieRequest and explain why a CookieRequest instance needs to be shared with all components in a Flutter application.</summary>
+CookieRequest is used to save the cookies from the django project. For this case, it is needed to be shared with all components in a flutter application because if you want to change the scree, you still need to be log in, which is stored in CookieRequest.</details>
 3.  Explain the mechanism of fetching data from JSON until it can be displayed on Flutter.
 Fetching JSON data to Flutter is using http library to fetch the data, and using the dart:convert library.
 4. Explain the authentication mechanism from entering account data on Flutter to Django authentication completion and the display of menus on Flutter.
