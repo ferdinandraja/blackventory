@@ -118,17 +118,21 @@ Yes we can retrieve JSON data without creating a model first. It is better to cr
 <summary>
 2. Explain the function of CookieRequest and explain why a CookieRequest instance needs to be shared with all components in a Flutter application.</summary>
 CookieRequest is used to save the cookies from the django project. For this case, it is needed to be shared with all components in a flutter application because if you want to change the scree, you still need to be log in, which is stored in CookieRequest.</details>
-3.  Explain the mechanism of fetching data from JSON until it can be displayed on Flutter.
-Fetching JSON data to Flutter is using http library to fetch the data, and using the dart:convert library.
-4. Explain the authentication mechanism from entering account data on Flutter to Django authentication completion and the display of menus on Flutter.
-First, create the login page. Than use pbp_django_auth to give a request to login, so that we can use the cookies for login.
-5. List all the widgets you used in this assignment and explain their respective functions.
+<details><summary>
+3.  Explain the mechanism of fetching data from JSON until it can be displayed on Flutter.</summary>
+Fetching JSON data to Flutter is using http library to fetch the data, and using the dart:convert library.</details>
+<details><summary>
+4. Explain the authentication mechanism from entering account data on Flutter to Django authentication completion and the display of menus on Flutter.</summary>
+First, create the login page. Than use pbp_django_auth to give a request to login, so that we can use the cookies for login.</details>
+<details><summary>
+5. List all the widgets you used in this assignment and explain their respective functions.</summary>
 - `FutureBuilder` for constructing a widget contingent on an asynchronous state.
 - `ListView` for presenting children in a list layout.
 - `GestureDetector` to recognize gestures on a widget.
 - `TextFormField` for accepting user text input.
 - `ElevatedButton` for generating a button.
 - `Container` to encapsulate a widget.
+</details>
 6. STEP BY STEP:
 A. Create a new django app named `authentication`. Don't forget to create a view, a routing, and all dependencies for login authentication, such as
 ```
