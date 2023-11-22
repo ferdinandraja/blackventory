@@ -124,16 +124,16 @@ Fetching JSON data to Flutter is using http library to fetch the data, and using
 <details><summary>
 4. Explain the authentication mechanism from entering account data on Flutter to Django authentication completion and the display of menus on Flutter.</summary>
 First, create the login page. Than use pbp_django_auth to give a request to login, so that we can use the cookies for login.</details>
-<details><summary>
-5. List all the widgets you used in this assignment and explain their respective functions.</summary>
+
+### 5. List all the widgets you used in this assignment and explain their respective functions.
 - `FutureBuilder` for constructing a widget contingent on an asynchronous state.
 - `ListView` for presenting children in a list layout.
 - `GestureDetector` to recognize gestures on a widget.
 - `TextFormField` for accepting user text input.
 - `ElevatedButton` for generating a button.
 - `Container` to encapsulate a widget.
-</details>
-6. STEP BY STEP:
+
+### 6. STEP BY STEP:
 A. Create a new django app named `authentication`. Don't forget to create a view, a routing, and all dependencies for login authentication, such as
 ```
 from django.shortcuts import render
